@@ -7,7 +7,7 @@ import sys
 __author__ = 'Taihou Nie'
 
 
-def test1():
+def hello():
     args = sys.argv
     if len(args) == 1:
         print('Hello, world!')
@@ -17,4 +17,4 @@ def test1():
         print('Too many arguments!')
 
 if __name__ == '__main__':
-    test1()
+    hello()
