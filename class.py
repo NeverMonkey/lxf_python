@@ -29,7 +29,6 @@ def run_twice(animal):
     animal.run()
     animal.run()
 
-
 cat = Cat()
 dog = Dog()
 cat.run()
