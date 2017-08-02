@@ -13,6 +13,7 @@ def lazy_sum(*args):
         for n in args:
             ax = ax + n
         return ax
+
     return sum
 
 
@@ -29,15 +30,19 @@ def count1():
     for i in range(1, 5):
         def f():
             return i * i
+
         fs.append(f)
-    i = 8
+    ##i = 8
     return fs
+
 
 f1, f2, f3, f4 = count1()
 # print(type(count))
 # print(type(count()))
 # print(count())
 print(f1(), f2(), f3(), f4())
+
+
 # 返回闭包时牢记的一点就是：
 # 返回函数不要引用任何循环变量，或者后续会发生变化的变量。
 # 如果一定要引用循环变量怎么办？
@@ -52,14 +57,20 @@ def count2():
     def f(j):
         # def g():
         #     return j * j
-        return lambda : j * j
+        return lambda: j * j
+
     fs = []
     for i in range(1, 5):
         fs.append(f(i))
     i = 8
     return fs
+
+
 f1, f2, f3, f4 = count2()
 # print(type(count))
 # print(type(count()))
 # print(count())
 print(f1(), f2(), f3(), f4())
+
+
+
