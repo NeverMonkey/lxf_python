@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+
 def calc_sum(*args):
     ax = 0
     for n in args:
@@ -32,7 +34,8 @@ def count1():
             return i * i
 
         fs.append(f)
-    ##i = 8
+
+##i = 8
     return fs
 
 
@@ -71,6 +74,3 @@ f1, f2, f3, f4 = count2()
 # print(type(count()))
 # print(count())
 print(f1(), f2(), f3(), f4())
-
-
-

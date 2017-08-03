@@ -1,6 +1,8 @@
 import math
 
+
 class Solver:
+
     def demo(self):
 
         a = int(input("a "))
