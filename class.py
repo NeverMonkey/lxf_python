@@ -17,7 +17,7 @@ class Cat(Animal):
 
 class Tortoise(Animal):
     def run(self):
-        print('Tortoise is running slowly...')
+        print('Tortoise is running VERY slowly...')
 
 
 class Bird(object):
