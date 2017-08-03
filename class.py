@@ -7,7 +7,7 @@ class Animal(object):
 
 class Dog(Animal):
     def run(self):
-        print('Dog is running')
+        print('Smart Dog is running')
 
 
 class Cat(Animal):
