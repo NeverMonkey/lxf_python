@@ -29,4 +29,5 @@ class Student(object):
     def age(self):
         return 2017 - self._birth
 
+
 s = Student()
