@@ -38,7 +38,9 @@ def str2float(s):
     else:
         return reduce(f1, map(char2num, s))
 
+
 print('str2float(\'123.456\') =', str2float('123.456'))
 print('str2float(\'123.\') =', str2float('123.'))
 print('str2float(\'.456\') =', str2float('.456'))
 print('str2float(\'789\') =', str2float('789'))
+
