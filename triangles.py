@@ -17,16 +17,16 @@ def fib():
         yield b
         a, b = b, a + b
 
+
 def triangles1(max):
     pass
-
 
 
 def triangles():
     L = [1]
     while True:
         yield L
-        L = [1] + [L[x-1] + L[x] for x in range(1, len(L))] +[1]
+        L = [1] + [L[x - 1] + L[x] for x in range(1, len(L))] + [1]
 '''
 m = 0
 for f in fib():

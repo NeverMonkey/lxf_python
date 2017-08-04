@@ -17,7 +17,9 @@ def prod(L):
     return reduce(muti, L)
 print('3 * 5 * 7 * 9 =', prod([3, 5, 7, 9]))
 
-#利用map和reduce编写一个str2float函数，把字符串'123.456'转换成浮点数123.456：
+# 利用map和reduce编写一个str2float函数，把字符串'123.456'转换成浮点数123.456：
+
+
 def str2float(s):
 
     def f1(x, y):
@@ -43,4 +45,3 @@ print('str2float(\'123.456\') =', str2float('123.456'))
 print('str2float(\'123.\') =', str2float('123.'))
 print('str2float(\'.456\') =', str2float('.456'))
 print('str2float(\'789\') =', str2float('789'))
-

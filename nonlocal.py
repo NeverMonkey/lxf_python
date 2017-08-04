@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+
 def func1():
     fs = []
     for i in range(1, 5):
-        fs.append(lambda : i * i)
+        fs.append(lambda: i * i)
     return fs
 
 f1, f2, f3, f4 = func1()
 print(f1(), f2(), f3(), f4())
+
 
 def func3():
     fs = []

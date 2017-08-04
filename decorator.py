@@ -26,11 +26,12 @@ def log2(text):
 # 首先执行log(text)，返回的是decorator函数
 # 再调用返回的函数，参数是now函数，返回值最终是wrapper函数。
 
-def log3(text = None):
+
+def log3(text=None):
     def decorator(func):
         @functools.wraps(func)
         def wrapper(*args, **kw):
-            if isinstance(text,str):
+            if isinstance(text, str):
                 print('%s %s start' % (text, func.__name__))
                 _func = func(*args, **kw)
                 print('%s %s end' % (text, func.__name__))
